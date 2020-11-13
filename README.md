@@ -1,21 +1,23 @@
 ## Laravel API
 
-<h3>Installation/Guide
+### Installation/Guide
+
 -   cd (project directory)
 -   run <code>composer install</code>
 -   run <code>npm install && npm run dev for auth routes.</code>
-<h3>Database Seeders</h3>
+    <h3>Database Seeders</h3>
 -   This project contains seeders for both Users and Posts tables.
 -   run <code>php artisan migrate:fresh --seed</code> to get started with some fresh data
 
-<h3>Endpoints</h3>
+### Endpoints
+
 -   GET /api/posts/
 -   A GET request to this URI endpoint retrieves all posts
 -   POST /api/posts/
 -   A POST request to URI creates a post (a random user_id will be generated with the created post for testing purposes)
 -   PUT /api/posts/
 -   A PUT reques to this URI will update the post.
--   Note: Please include a "post_id": $post->id to the JSON object along with title and description when making this request.
+-   Note: Please include a "post_id": \$post->id to the JSON object along with title and description when making this request.
 -   DELETE /api/posts/{resource_id}
 -   A DELETE request to this endpoint will delete the given resource.
 
